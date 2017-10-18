@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DonguileArdasikSayilarinToplami
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int Toplam = 0, i,a,b;
+            Console.WriteLine("Birinci Sayıyı Girin");
+            a = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("İkinci Sayıyı Girin");
+            b = int.Parse(Console.ReadLine());
+
+            for (i = a; i < b; i++)
+                Toplam += i;
+            Console.WriteLine("Toplam Sayı :{0}", Toplam);
+            Console.ReadKey();
+        }
+    }
+}
