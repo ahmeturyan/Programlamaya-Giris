@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HavuzProblemi
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double a, b, c, kacsaat;
+
+            Console.WriteLine("a musluğu kaç saatte doldurur:");
+            a = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("b musluğu kaç saatte doldurur:");
+            b = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("c musluğu kaç saate doldurur:");
+            c = double.Parse(Console.ReadLine());
+
+            kacsaat = (1 / a) + (1 / b) + (1 / c);
+            Console.WriteLine("Üç musluk birden :" + 1/kacsaat);
+            Console.ReadKey();
+        }
+    }
+}
